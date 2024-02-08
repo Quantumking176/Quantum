@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Valentine's Day</title> 
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lemon Milk', sans-serif;
+            background: #ff6b6b;
+            text-align: center;
+            color: #000000;
+        }
+
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .hearts {
+            font-size: 30px;
+            color: #ffffff;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-top: 10px;
+            line-height: 1.5;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .btn,
+        .random-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #9b59b6;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover,
+        .random-button:hover {
+            background-color: #8e44ad;
+        }
+
+        .thank-you {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: none;
+            color: #000000;
+        }
+
+        .interesting {
+            font-style: italic;
+            font-size: 24px;
+            margin-top: 30px;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        .valentine-box {
+            background-color: #ff4d4d;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        #secondPage {
+            color: #000000;
+        }
+
+        .marry-me-question {
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 40px;
+        }
+
+        .options {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .random-button {
+            position: relative;
+        }
+
+        .password-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .password-input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .password-error {
+            color: red;
+        }
+
+        .comment-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #9b59b6;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .comment-button:hover {
+            background-color: #8e44ad;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div id="firstPage" class="container"> 
+   <img src="https://i.ibb.co/wWx7GzN/love-image.jpg" alt="Her Photo"> 
+   <div class="hearts">
+    ♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡
+   </div> 
+   <p class="message"> 🌟 You light up my world, my shining star! 🌟<br> Every moment with you feels like a beautiful melody, and your laughter is my favorite song. Let's create our own love story together. ❤️ </p> 
+   <p class="marry-me-question">WILL YOU MARRY ME?</p> 
+   <div class="options"> <button class="btn" onclick="proceedToPasswordPage()">Yes sure!</button> <button class="random-button" onclick="randomizePosition()">No sorry!</button> 
+   </div> 
+   <p id="thankYouFirstPage" class="thank-you">THANK YOU</p> 
+  </div> 
+  <div id="passwordPage" class="container" style="display: none;"> 
+   <div class="password-container"> 
+    <h2>Enter the Code Word</h2> 
+    <div class="password-error" id="passwordError"></div> 
+    <input type="password" class="password-input" id="passwordInput" placeholder="Enter the Code Word"> <button class="btn" onclick="validatePassword()">Enter</button> 
+   </div> 
+  </div> 
+  <div id="secondPage" class="container" style="display: none;"> 
+   <img src="https://i.ibb.co/x6MGY3G/interesting-image.jpg" alt="Interesting Image"> 
+   <div class="hearts">
+    ♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡
+   </div> 
+   <div class="valentine-box"> 
+    <p class="message"> 🌈 **THANK YOU FOR CHOOSING ME BABEE😙♥️.... I lovee youuu soooooooooooo muchhhhhhh darloooo✨♥️♥️my babyy... My sweetheart... Myy saturn's ring... My smile... My everything..... U aree ky everything ♥️your are minee.... Only🌈 mineeee..... Onlyy my property.... No onee can havee you babee.... I lovee youu soo much and wantt youu forever... For ever.... Though I know I am not perfect... I am not good for uu... I amm trying my best to impress you😔hope you like my efforts... If u ever feel that I ak doing over than just let me know immediately... Don't just keep it till yourself... I lovee youu... I will give my best to fix whatever is making you upset... But never leave me.... Cuz trust me I will be completely broke into pieces if u always left me... Though I know u must have seen me with many girls talking... But dont be possessive... I was having only one heart and that is with you🙂✨I trusted you with it... Now it's your choice to keep it with care or break it✨.... Let me know your every problem ♥️I know I am not good at consoling but I will listen to your every problem and will give my best to get you in control..... I will always be there whenever you will need me✨ .... I hopee meraa yee tareeka tumhee psnd aayaa hogaa😅😅 at last all i want to say is- I LOVE YOU.... I DON'T CARE ABOUT YOUR LOOKS, YOUR PERSONALITY, YOUR PAST CRUSHES, YOUR CHOICES, YOUR CHILDISH BEHAVIOR..... I LOVEE YOU THE WAY YOU ARE... NEVER CHANGE YOURSELF... AND I LOVEE WHEN U ACT CHILDISH... I LOVEE .... AND I ALWAYS WILL♥️HAPPY VALENTINES DAY BABE✨ </p> 
+    <p class="interesting">HAPPY VALENTINES DAY♥️</p> <button class="comment-button" onclick="redirectToGoogleForm()">Comment</button> 
+   </div> 
+   <p id="thankYouSecondPage" class="thank-you">THANK YOU</p> 
+  </div> 
+  <div id="noLuckPage" class="container" style="display: none;"> 
+   <h2>Sorry... Better luck next time 👍</h2> <button class="comment-button" onclick="redirectToGoogleForm()">Comment</button> 
+  </div> 
+  <script>
+        let passwordAttempts = 0;
+
+        function proceedToPasswordPage() {
+            document.getElementById('firstPage').style.display = 'none';
+            document.getElementById('passwordPage').style.display = 'block';
+        }
+
+        function validatePassword() {
+            const passwordInput = document.getElementById('passwordInput').value;
+            const passwordError = document.getElementById('passwordError');
+
+            if (passwordInput === 'saturn\'s_ring') {
+                document.getElementById('passwordPage').style.display = 'none';
+                document.getElementById('secondPage').style.display = 'block';
+                document.getElementById('thankYouSecondPage').style.display = 'block';
+            } else {
+                passwordAttempts++;
+
+                if (passwordAttempts === 3) {
+                    document.getElementById('passwordPage').style.display = 'none';
+                    document.getElementById('noLuckPage').style.display = 'block';
+                } else {
+                    passwordError.textContent = 'Incorrect Code Word. Try again.';
+                }
+            }
+        }
+
+        function randomizePosition() {
+            const randomButton = document.querySelector('.random-button');
+            const newPositionX = Math.random() * (window.innerWidth - randomButton.clientWidth);
+            const newPositionY = Math.random() * (window.innerHeight - randomButton.clientHeight);
+
+            randomButton.style.position = 'absolute';
+            randomButton.style.left = newPositionX + 'px';
+            randomButton.style.top = newPositionY + 'px';
+        }
+
+        function redirectToGoogleForm() {
+            window.location.href= 'https://docs.google.com/forms/d/e/1FAIpQLSfVyq2ybbWNSQi5pQAvJsZR-CNjaeBIomOyBdG0YLzjUH5WyA/viewform?usp=pp_url';
+        }
+    </script> 
+ 
+</body></html>
